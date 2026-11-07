@@ -1,0 +1,23 @@
+# Node & Next.js
+node_modules/
+.next/
+out/
+fraud-dashboard/.env.local
+fraud-dashboard/.env
+
+# Python & Machine Learning
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+backend/.env
+*.joblib
+*.pkl
+
+# Datasets
+*.csv
+data/
+
+# OS Files
+.DS_Store

@@ -1,0 +1,39 @@
+{
+  "model_name": "XGBoost Financial Fraud Classifier",
+  "version": "2.1.0-production",
+  "training_timestamp": "2026-11-05T15:09:41.675277+00:00",
+  "framework": "XGBoost + Scikit-Learn",
+  "dataset_name": "backend/data.csv",
+  "dataset_shape": [
+    100000,
+    43
+  ],
+  "preprocessing": {
+    "scaler": "StandardScaler (Numerical Only)",
+    "encoder": "OneHotEncoder(handle_unknown='ignore')",
+    "class_imbalance_handling": "scale_pos_weight = 47.66"
+  },
+  "hyperparameters": {
+    "n_estimators": 200,
+    "max_depth": 5,
+    "learning_rate": 0.08,
+    "subsample": 0.85,
+    "colsample_bytree": 0.85,
+    "min_child_weight": 3,
+    "scale_pos_weight": 47.66,
+    "eval_metric": "logloss"
+  },
+  "evaluation_metrics": {
+    "roc_auc": 0.8394,
+    "pr_auc": 0.127,
+    "brier_score_calibrated": 0.0191
+  },
+  "artifacts_generated": [
+    "final_model.joblib",
+    "preprocessing_pipeline.joblib",
+    "feature_schema.json",
+    "model_metrics.json",
+    "threshold_config.json",
+    "model_metadata.json"
+  ]
+}

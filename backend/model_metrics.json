@@ -1,0 +1,522 @@
+{
+  "best_model": "XGBoost",
+  "algorithm_comparison": {
+    "Logistic Regression": {
+      "accuracy": 0.7375,
+      "precision": 0.0576,
+      "recall": 0.7664,
+      "f1_score": 0.1071,
+      "specificity": 0.7368,
+      "roc_auc": 0.8337,
+      "pr_auc": 0.1138,
+      "false_positive_rate": 0.2632,
+      "false_negative_rate": 0.2336,
+      "confusion_matrix": {
+        "true_negative": 14434,
+        "false_positive": 5155,
+        "false_negative": 96,
+        "true_positive": 315
+      },
+      "roc_curve_sample": {
+        "fpr": [
+          0.0,
+          0.0043,
+          0.009,
+          0.0142,
+          0.0227,
+          0.0325,
+          0.0451,
+          0.0652,
+          0.0793,
+          0.0996,
+          0.1167,
+          0.1373,
+          0.1578,
+          0.1829,
+          0.2209,
+          0.2517,
+          0.2896,
+          0.3643,
+          0.4386,
+          0.5115,
+          0.6413
+        ],
+        "tpr": [
+          0.0,
+          0.056,
+          0.1168,
+          0.1679,
+          0.2238,
+          0.2749,
+          0.3285,
+          0.3771,
+          0.4282,
+          0.472,
+          0.5207,
+          0.5669,
+          0.618,
+          0.6642,
+          0.7129,
+          0.7567,
+          0.8029,
+          0.8467,
+          0.8954,
+          0.9392,
+          0.9854
+        ]
+      },
+      "pr_curve_sample": {
+        "precision": [
+          0.0205,
+          0.0216,
+          0.0228,
+          0.0241,
+          0.0256,
+          0.0272,
+          0.0289,
+          0.0312,
+          0.0334,
+          0.0355,
+          0.0384,
+          0.0411,
+          0.0444,
+          0.0493,
+          0.0548,
+          0.0612,
+          0.0695,
+          0.0797,
+          0.0925,
+          0.134,
+          1.0
+        ],
+        "recall": [
+          1.0,
+          1.0,
+          1.0,
+          0.9976,
+          0.9976,
+          0.9927,
+          0.9854,
+          0.9854,
+          0.9757,
+          0.9489,
+          0.9343,
+          0.9002,
+          0.8637,
+          0.8394,
+          0.8005,
+          0.7445,
+          0.6764,
+          0.5815,
+          0.4501,
+          0.326,
+          0.0
+        ]
+      }
+    },
+    "Random Forest": {
+      "accuracy": 0.7976,
+      "precision": 0.064,
+      "recall": 0.6496,
+      "f1_score": 0.1165,
+      "specificity": 0.8007,
+      "roc_auc": 0.82,
+      "pr_auc": 0.1017,
+      "false_positive_rate": 0.1993,
+      "false_negative_rate": 0.3504,
+      "confusion_matrix": {
+        "true_negative": 15685,
+        "false_positive": 3904,
+        "false_negative": 144,
+        "true_positive": 267
+      },
+      "roc_curve_sample": {
+        "fpr": [
+          0.0,
+          0.0069,
+          0.0113,
+          0.0209,
+          0.0314,
+          0.0415,
+          0.0546,
+          0.0678,
+          0.0881,
+          0.1054,
+          0.1231,
+          0.1478,
+          0.1777,
+          0.211,
+          0.2617,
+          0.3049,
+          0.3478,
+          0.3823,
+          0.4549,
+          0.5733,
+          0.8338
+        ],
+        "tpr": [
+          0.0,
+          0.0633,
+          0.129,
+          0.1825,
+          0.236,
+          0.2895,
+          0.3382,
+          0.3844,
+          0.4307,
+          0.4818,
+          0.528,
+          0.5742,
+          0.6204,
+          0.6667,
+          0.7153,
+          0.7616,
+          0.8078,
+          0.8564,
+          0.9027,
+          0.9489,
+          0.9951
+        ]
+      },
+      "pr_curve_sample": {
+        "precision": [
+          0.0205,
+          0.0216,
+          0.0228,
+          0.0241,
+          0.0256,
+          0.0272,
+          0.0291,
+          0.0308,
+          0.033,
+          0.035,
+          0.0377,
+          0.0408,
+          0.0442,
+          0.047,
+          0.0513,
+          0.057,
+          0.0658,
+          0.077,
+          0.0925,
+          0.125,
+          1.0
+        ],
+        "recall": [
+          1.0,
+          1.0,
+          1.0,
+          0.9976,
+          0.9951,
+          0.9927,
+          0.9903,
+          0.9757,
+          0.9635,
+          0.9367,
+          0.9173,
+          0.8929,
+          0.8613,
+          0.8005,
+          0.7494,
+          0.6934,
+          0.6399,
+          0.562,
+          0.4501,
+          0.3041,
+          0.0
+        ]
+      }
+    },
+    "XGBoost": {
+      "accuracy": 0.863,
+      "precision": 0.0878,
+      "recall": 0.6034,
+      "f1_score": 0.1533,
+      "specificity": 0.8685,
+      "roc_auc": 0.8394,
+      "pr_auc": 0.127,
+      "false_positive_rate": 0.1315,
+      "false_negative_rate": 0.3966,
+      "confusion_matrix": {
+        "true_negative": 17013,
+        "false_positive": 2576,
+        "false_negative": 163,
+        "true_positive": 248
+      },
+      "roc_curve_sample": {
+        "fpr": [
+          0.0,
+          0.0028,
+          0.0109,
+          0.0175,
+          0.0255,
+          0.0336,
+          0.0452,
+          0.0561,
+          0.0723,
+          0.0842,
+          0.1009,
+          0.1254,
+          0.1487,
+          0.1854,
+          0.2265,
+          0.2495,
+          0.3042,
+          0.3367,
+          0.3845,
+          0.5204,
+          0.7551
+        ],
+        "tpr": [
+          0.0,
+          0.0633,
+          0.1314,
+          0.1825,
+          0.2287,
+          0.2871,
+          0.3406,
+          0.3942,
+          0.438,
+          0.4842,
+          0.5304,
+          0.5815,
+          0.6277,
+          0.674,
+          0.7178,
+          0.764,
+          0.8102,
+          0.8564,
+          0.8978,
+          0.944,
+          0.9854
+        ]
+      },
+      "pr_curve_sample": {
+        "precision": [
+          0.0205,
+          0.0216,
+          0.0228,
+          0.0241,
+          0.0255,
+          0.027,
+          0.0287,
+          0.0306,
+          0.033,
+          0.0353,
+          0.0379,
+          0.0416,
+          0.0463,
+          0.0506,
+          0.0546,
+          0.0615,
+          0.0693,
+          0.0846,
+          0.1043,
+          0.1379,
+          0.3125
+        ],
+        "recall": [
+          1.0,
+          0.9976,
+          0.9976,
+          0.9951,
+          0.9927,
+          0.9854,
+          0.9781,
+          0.9684,
+          0.9635,
+          0.9465,
+          0.9221,
+          0.9124,
+          0.9027,
+          0.8637,
+          0.7981,
+          0.7494,
+          0.6764,
+          0.6204,
+          0.5109,
+          0.3406,
+          0.0122
+        ]
+      }
+    }
+  },
+  "probability_calibration": {
+    "uncalibrated": {
+      "brier_score": 0.098,
+      "max_probability": 0.9735,
+      "mean_probability": 0.2223,
+      "curve": {
+        "prob_true": [
+          0.0024,
+          0.0063,
+          0.0227,
+          0.0249,
+          0.0254,
+          0.0513,
+          0.0621,
+          0.1115,
+          0.1298,
+          0.3478
+        ],
+        "prob_pred": [
+          0.0448,
+          0.1432,
+          0.2491,
+          0.3491,
+          0.448,
+          0.5476,
+          0.6483,
+          0.7469,
+          0.8419,
+          0.9268
+        ]
+      }
+    },
+    "platt_sigmoid": {
+      "brier_score": 0.0191,
+      "max_probability": 0.2598,
+      "mean_probability": 0.0202,
+      "brier_reduction_pct": 80.54,
+      "curve": {
+        "prob_true": [
+          0.0157,
+          0.1471,
+          0.2041
+        ],
+        "prob_pred": [
+          0.0156,
+          0.1363,
+          0.2206
+        ]
+      }
+    },
+    "isotonic": {
+      "brier_score": 0.0191,
+      "max_probability": 0.4341,
+      "mean_probability": 0.0201,
+      "brier_reduction_pct": 80.55,
+      "curve": {
+        "prob_true": [
+          0.0162,
+          0.1502,
+          0.2537,
+          0.1667,
+          0.4
+        ],
+        "prob_pred": [
+          0.0161,
+          0.1353,
+          0.229,
+          0.3413,
+          0.4301
+        ]
+      }
+    }
+  },
+  "top_15_features": [
+    {
+      "rank": 1,
+      "feature": "international_transaction",
+      "importance": 0.1576,
+      "relative_importance_pct": 15.76
+    },
+    {
+      "rank": 2,
+      "feature": "browser_Unknown",
+      "importance": 0.0322,
+      "relative_importance_pct": 3.22
+    },
+    {
+      "rank": 3,
+      "feature": "high_risk_country",
+      "importance": 0.032,
+      "relative_importance_pct": 3.2
+    },
+    {
+      "rank": 4,
+      "feature": "used_chip",
+      "importance": 0.0262,
+      "relative_importance_pct": 2.62
+    },
+    {
+      "rank": 5,
+      "feature": "merchant_country_USA",
+      "importance": 0.0209,
+      "relative_importance_pct": 2.09
+    },
+    {
+      "rank": 6,
+      "feature": "transactions_last_1h",
+      "importance": 0.0206,
+      "relative_importance_pct": 2.06
+    },
+    {
+      "rank": 7,
+      "feature": "transaction_channel_Online",
+      "importance": 0.0193,
+      "relative_importance_pct": 1.93
+    },
+    {
+      "rank": 8,
+      "feature": "num_chargebacks_ever",
+      "importance": 0.0111,
+      "relative_importance_pct": 1.11
+    },
+    {
+      "rank": 9,
+      "feature": "account_age_days",
+      "importance": 0.0097,
+      "relative_importance_pct": 0.97
+    },
+    {
+      "rank": 10,
+      "feature": "customer_state_OH",
+      "importance": 0.0092,
+      "relative_importance_pct": 0.92
+    },
+    {
+      "rank": 11,
+      "feature": "num_declined_last_30d",
+      "importance": 0.0091,
+      "relative_importance_pct": 0.91
+    },
+    {
+      "rank": 12,
+      "feature": "merchant_country_India",
+      "importance": 0.0085,
+      "relative_importance_pct": 0.85
+    },
+    {
+      "rank": 13,
+      "feature": "merchant_country_France",
+      "importance": 0.0081,
+      "relative_importance_pct": 0.81
+    },
+    {
+      "rank": 14,
+      "feature": "customer_state_ID",
+      "importance": 0.0079,
+      "relative_importance_pct": 0.79
+    },
+    {
+      "rank": 15,
+      "feature": "customer_state_UT",
+      "importance": 0.0078,
+      "relative_importance_pct": 0.78
+    }
+  ],
+  "threshold_summary": {
+    "binary_decision_threshold": 0.35,
+    "low_risk_ceiling": 0.25,
+    "medium_risk_floor": 0.25,
+    "medium_risk_ceiling": 0.6,
+    "high_risk_floor": 0.6
+  },
+  "dataset_summary": {
+    "total_samples": 100000,
+    "train_samples": 80000,
+    "test_samples": 20000,
+    "fraud_rate_pct": 2.055
+  }
+}

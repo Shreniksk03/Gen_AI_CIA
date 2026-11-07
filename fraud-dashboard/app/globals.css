@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+svg {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+canvas {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  background-color: #03050B;
+  color: #e2e8f0;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Premium Dark Glassmorphism */
+.glass-panel {
+  background: rgba(5, 7, 13, 0.68);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.65), inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(8, 12, 22, 0.78);
+  border-color: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.8), inset 0 1px 0 0 rgba(255, 255, 255, 0.16);
+}
+
+.glass-panel-subtle {
+  background: rgba(255, 255, 255, 0.025);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Volumetric Lighting Orbs */
+.orb-glow {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(120px);
+  pointer-events: none;
+  opacity: 0.6;
+  mix-blend-mode: screen;
+}
+
+/* Atmospheric subtle scan overlay */
+.vignette-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 50% 50%, transparent 60%, rgba(3, 5, 11, 0.75) 100%);
+  z-index: -5;
+}
+
+/* 3. Custom Sleek Dark Glassmorphism Scrollbar System */
+.custom-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(75, 85, 99, 0.6) transparent;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: rgba(75, 85, 99, 0.55);
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(107, 114, 128, 0.85);
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.3);
+}
+
+/* Custom Tailwind Utility Scrollbar Classes */
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-track-transparent::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+.scrollbar-thumb-gray-700::-webkit-scrollbar-thumb {
+  background-color: rgba(55, 65, 81, 0.75) !important;
+  border-radius: 9999px;
+}
+
+.scrollbar-thumb-gray-700:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(75, 85, 99, 0.95) !important;
+}
+
+/* Global Minimalist Fallback Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(75, 85, 99, 0.5);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(56, 189, 248, 0.5);
+}
+
+/* Subtle pulses */
+@keyframes ambientGlowPulse {
+  0%, 100% { opacity: 0.45; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.06); }
+}
+
+.animate-glow-pulse {
+  animation: ambientGlowPulse 8s ease-in-out infinite;
+}
+
+/* Interactive button effects */
+.btn-command {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-command::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.15), rgba(245, 158, 11, 0.12));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn-command:hover::before {
+  opacity: 1;
+}

@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST="{\"components/CanvasWrapper.tsx -> @/components/AgentNodeNetwork\":{\"id\":\"components/CanvasWrapper.tsx -> @/components/AgentNodeNetwork\",\"files\":[\"static/chunks/_app-pages-browser_components_AgentNodeNetwork_tsx.js\"]}}"
